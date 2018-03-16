@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-mongoose.connect('mongodb://localhost:27017/ALDATABASE');
+mongoose.connect('mongodb://rashansamith88:0771260101@ds115569.mlab.com:15569/aldatabase');
 mongoose.connection.on('connected',function(){
     console.log('connected');
 
@@ -22,7 +22,7 @@ mongoose.connection.on('error',function(err){
 });
 
 app.get('/',function(req,res){
-    res.send('hii rashan');
+    res.send('hii rashan samith');
 
 });
 
